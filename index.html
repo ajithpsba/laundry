@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>laundry express</title>
+        <link rel="stylesheet" href="homestyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    </head>
+<script>
+    
+function report1()
+{
+    nname = document.forms["form1"]["name1"].value;
+    nnumber = document.forms["form1"]["number1"].value;
+    naddress = document.forms["form1"]["address1"].value;
+    nland = document.forms["form1"]["land1"].value;
+    ncloths = document.forms["form1"]["cloths1"].value;
+
+
+
+
+    if( nname =='')
+    {
+        alert("please enter your Name!!!")
+    }
+    else if (nnumber == ''){
+        alert("Please enter your number!!")
+    }
+    else if ( nnumber.toString().length === 10){
+        alert("Please enter the correct number !!")
+    }
+    else if (naddress == ''){
+        alert("Please enter your Address!!")
+    }
+    else if (ncloths == ''){
+        alert("Please enter number of cloths!!")
+    }
+    else if (nland == ''){
+        alert("Please enter your Landmark!!")
+    }
+    else {
+        alert("successfull submited...ping you soon")
+    }
+
+}
+   
+</script>
+    <body>
+        
+        
+            <div class="nav">
+                <img src="img/washlogo.png" width="40px" height="40px">
+                <p>Laundry Express</p>
+                <ol>
+                   <a style="text-decoration: none;" href="#home-1"><li>Home</li></a>
+                   <a style="text-decoration: none;" href="#about-1"><li>About Us</li></a>
+                   <a style="text-decoration: none;" href="#serv-1"><li>Services</li></a>
+                   <a style="text-decoration: none;" href="#price-1"><li>Prices</li></a>
+                    <a style="text-decoration: none;" href="#cont-1"><li>Contact Us</li></a>
+                </ol>
+                <div class="left1">
+                <p>Admin</p>
+                <span class="acc"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+                </div>
+            </div>
+            <div class="header">
+            <div class="home">
+<div class="slideshow">
+                    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/slide1.jpg" alt="Los Vegas" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="img/slide2.jpg" alt="Chicago" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="img/slide3.jpg" alt="New York" class="d-block w-100">
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <center><h2>Give Your Worst And Take Our Best</h2></center>
+
+</div>
+                <div class="slogan">
+                    <div class="formtop">
+                        <center><h2>Pick A Schedule</h2>
+                        Call- 9790755708
+                        </center>
+                    </div>
+                    <div class="formmain">
+                    <form method="post" id="form1">
+                        <br>
+                        <input class="form-control" type="text" id="name1" placeholder="Your name" aria-label="default input example" ><br>
+                        <input class="form-control" type="number" id="number1" placeholder="Phone Number" aria-label="default input example" ><br>
+                        <input class="form-control" type="text" placeholder="Address" id="address1" aria-label="default input example" ><br>
+                        <input class="form-control" type="text" placeholder="Landmark" id="land1" aria-label="default input example" ><br>
+                        <input class="form-control" type="number" placeholder="Pieces of clothes" id="cloths1" aria-label="default input example"><br>
+                        <input class="form-control" type="date" placeholder="" aria-label="default input example"><br>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">Normal Delivery(3 days)</option>
+                            <option value="2">Express Delivery(24 Hours)</option>
+                          </select>
+                          <br>
+                        <center><input type="submit" onclick="report1()" value="Ping Us" id="btn"></center>
+                    
+                    </form>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <center><h1 id="about-1"> About US</h1></center>
+        </div>
+        <div class="aboutus">
+            <h1><span>35</span>YEARS OF EXPERIENCE</h1><br>
+            <h3>In Dry Cleaning</h3>
+            <p>
+                Chennai Dry Cleaners is a full-service dry cleaners since 1990, We started our career by providing laundry services to the most reputed institution of India, IIT Madras in the year 1990. After 15 years of service and experience with many educational institutions,star hotels and other commercial institutions, we decided to offer dry cleaning cum laundry services to people in residential areas and hence started our dry cleaning cum laundry shop at Adayar, Chennai where we are servicing the entire satisfaction of all of our customers and public who are residing in the surrounding areas of Besant nagar such as Shashtri nagar, Gandhi nagar, Adayar, Thiruvanmiyur.etc
+
+Due to the growing demands of laundry services and to give respect to the request of our customers, We have decided to extend our services to all areas in Chennai through our free collection and delivery service. With our free collection and delivery service, our committed staff will be at your door steps and all you have to do is just call us and let us know about your laundry needs. We collect clothes from your home and deliver back clean and shining. You can save your precious time.
+
+To keep your wardrobe looking and feeling its best, we implement the latest, most effective dry cleaning and laundering technologies, backed by decades of hands-on experience and ongoing training in stain removal and restoration.
+
+Our aim is to provide our customers with the best dry cleaning and laundry services by understanding their laundry needs & preferences.
+
+            </p>
+        </div>
+    <h1>Why To Choose Us?</h1>
+    <div class="choose">
+        <div class="three">
+            <center><img src="img/trust.png" alt=""height="200px" width="200px"><br>
+            
+                <h5><strong>Trustable Service</strong><br></h5></center>
+
+        </div>
+        <div class="three">
+            <center><img src="img/express.png" alt=""height="200px" width="200px"><br>
+            
+                <h5><strong>Pick & Delivery</strong><br></h5></center>
+
+        </div>
+        <div class="three">
+            <center><img src="img/experience.jpg" alt=""height="200px" width="200px"><br>
+            
+                <h5><strong>Experience</strong><br></h5></center>
+
+        </div>
+    </div>
+        <div class="services">
+            <center><h1 id="serv-1"> Our Services</h1></center>
+        </div>
+           
+        <div class="services1">
+            <div class="one">
+           <center><img src="img/dry.jpg" alt=""height="200px" width="200px"><br>
+            
+           <h5><strong>Dry Cleaning</strong><br></h5></center>
+              <p> We offer a comprehensive dry cleaning service for every day items such as suits, dresses, 
+                trousers and more. We do dry cleaning with a solvent of international 
+                choice - Perc(Perchloroethylene) which is absolutely harmless to the fabric.
+                 With our 2-3 day service your dry cleaning will be ready to wear before you know it. 
+                 Our collection and delivery service conveniently calls at your home or office.
+            </p>
+            </div>
+            <div class="one">
+           <center><img src="img/wet.jpg" alt=""height="200px" width="200px"><br>
+            
+           <h5><strong>Wet Cleaning</strong><br></h5></center>
+               <p> With our Laundry Services you can look forward to your clothes being delivered to your door freshly laundered,
+                 crisply pressed and ready to wear.
+                  All your clothes are taken personal care and the nature of the cloth is clearly examined before washing 
+                  in order to wash them with appropriate fabric friendly detergents. After washing, 
+                  all clothes are pressed to give a crisp and neat finish to it. Call us and we will pick.
+            
+            </p>
+            </div>
+            <div class="one">
+            <center><img src="img/saree.jpg" height="200px" width="200px"><br>
+            <h5><strong>Saree Polishing</strong><br></h5></center>
+               <p> Sarees, especially silk sarees tend to lose their brightness and shine in the course of time as you use it.
+                 We offer best saree polishing service which preserves the inherent shining of sarees without affecting 
+                 its natural beauty and durability.
+                  It is good to give a combined treatment of dry cleaning plus saree polishing to make your 
+                  sarees look equal to brand new ones. Call us and we will pick up your sarees at your door step.
+            </p>
+            </div>
+        </div>
+        <div class="services2">
+            <div class="one">
+            <center><img src="img/blazer.jpg" height="200px" width="200px"><br>
+            <h5><strong>Blazer Dry Cleaning</strong></h5></center>
+                With our years of experience, CDC has perfected the cleaning, pressing and packaging of suits,
+                 so you receive them clean, crisp, and wrinkle free.
+                  Once you will experienced a CDC Blazer Dry Clean  you will keep coming back! Experience a perfectly pressed garment, 
+                  hand finished by one of our experienced pressers. You will see and feel the difference.
+                   Express Delivery is also available!
+
+            </p>
+            </div>
+            <div class="one">
+            <center><img src="img/pick.jpg" alt="" height="200px" width="200px"><br>
+           <h5><p><strong>Free Pickup & Delivery</strong></h5></center>
+                Save your precious time and get rid of the pressure of dry cleaning your clothes in your 
+                busy schedule. We go the extra mile to bring you personalized service when and where 
+                you need it with our pickup and delivery service at absolutely free of charge.
+                 Call us at 9790755708 & let us know your comfortable timing for collecting the clothes.We cover all the areas in Chennai.
+            
+            </p>
+            </div>
+            <div class="one">
+            <center><img src="img/express.png" alt=""height="200px" width="200px"><br>
+            <h5><strong>Express Delivery</strong></h5></center>
+            <p>
+                Are you rushing to airport in another 10 hours and have still not dry cleaned your clothes?
+                Introducing for the first time in India,8 hours Express Delivery and 24 hours urgent delivery with no compromise to the quality of our services.
+                 We are offering this service at double the usual charge for 8 hours delivery and 
+                 30% extra charge for 24 hours delivery. We are here to meet your urgent needs.
+            </p>
+            </div>
+        </div>
+    <div class="prices">
+        <center><h1 id="price-1">Our Price</h1></center>
+    </div>
+    <div class="prices1">
+        <div>
+    <div class="two">
+        <p>
+            SUITS/BLAZERS [GENTS]<br>
+         Gents Suit 2Pcs - Rs.300-400<br>
+         Gents Suit 3Pcs - Rs.400-500<br>
+        Gents Single Blazer - Rs.250-300<br>
+        Over coat - Rs. 300<br>
+        </p>
+    </div>
+        </div>
+        <div>
+    <div class="two">
+        <p>
+            SUITS/BLAZERS [LADIES]<br>
+Ladies Suit 2Pcs - Rs.250-350<br>
+Ladies Suit 3Pcs - Rs.350-450<br>
+Half sleeve Coat - Rs.150-250<br>
+Over coat - Rs.300<br>
+        </p>
+    </div>
+        </div>
+        <div>
+    <div class="two">
+        <p>
+            GENTS CLOTHES[APPARELS]<br>
+Shirt - Rs.60-80<br>
+Pants/Trousers/Jeans - Rs.70-150<br>
+Half pant/shorts - Rs.50-75<br>
+TShirt - Rs.50-80<br>
+        </p>
+    </div>
+        </div>
+    </div>
+    <div class="prices2">
+        <div>
+            <div class="two">
+                <p>
+                    JACKETS<br>
+[ALL KINDS (M/F)]<br>
+Jacket - Rs.250-400<br>
+Leather Jacket - Rs.700-1200<br>
+Woolen Jacket(L) - Rs.600-1100<br>
+
+                </p>
+            </div>
+                </div>
+
+                <div>
+                    <div class="two">
+                        <p>
+                            SAREES AND BLOUSE<br>
+[ ALL KINDS]<br>
+Saree(Cotton) - Rs.100-150<br>
+Saree(With Works) - Rs.250-500<br>
+Saree(Pure Silk) - Rs.250-400<br>
+Saree Blouse - Rs.50-150<br>
+                        </p>
+                    </div>
+                        </div>
+
+                        <div>
+                            <div class="two">
+                                <p>
+                                    KIDS WEAR<br>
+                                    [AGE 1-15]<br>
+                                    Baby Frock/Pant/Shirt - Rs.100-150<br>
+                                    Skirt & Top(Silk)- Rs.150<br>
+                                    
+                                    
+                                </p>
+                            </div>
+                                </div>
+
+    </div>
+<div class="contact" id="contacts">
+    <center><h1 id="cont-1">Contact US</h1></center>
+</div>
+<div class="contactmain">
+<div class="contact1">
+    <p><b>ADDRESS:</b><br>
+    No 44/A Anandhan 3rd Street<br>
+    GKM Colony Agaram<br>
+    Chennai-600082<br>
+    </p>
+    <div class="rock">
+        <img src="img/rocket.png" alt="" width="50px" height="50px">
+    </div>
+<br>
+    <p><b>Call Us:</b><br>
+    91+ 9790755708</p>
+    <p><b>Mail Us:</b><br>
+    ajithkumar.10035@gmail.com</p><br>
+    <div class="call">
+        <img src="img/call.png" alt="" width="50px" height="50px">
+    </div>
+</div>
+<div class="contact2">
+    <center><h2>GET IN TOUCH <span>WITH US</span></h2></center>
+    <form method="post" id="form2">
+    <input class="form-control" type="text" id="name2" placeholder="Your name" aria-label="default input example" required><br>
+    <input class="form-control" type="text" id="number2" placeholder="Phone Number" aria-label="default input example" required><br>
+    <textarea id="con" name="Laundry Express" rows="4" cols="50">Message for me* </textarea>
+    <br>
+    <br>
+    <input type="submit" onclick="report2()" value="Submit">
+    </form>
+</div>
+</div>
+</body>
+</html>
